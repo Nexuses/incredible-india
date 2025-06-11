@@ -403,7 +403,7 @@ function App() {
       {/* Enhanced Hero Section */}
       <section
         id="home"
-        className="relative min-h-screen flex items-center justify-center overflow-hidden pt-12 md:pt-16"
+        className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 md:pt-40"
         style={{ backgroundImage: "url('https://4536150.fs1.hubspotusercontent-na1.net/hubfs/4536150/Canva%20images/dl.beatsnoop.com-3000-vE2rhFRz71.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
         {/* Enhanced dark overlay for readability */}
@@ -432,12 +432,12 @@ function App() {
           style={{ y: heroY, opacity: heroOpacity }}
           className="relative z-20 text-center px-6 md:px-8 max-w-5xl mx-auto"
         >
-          {/* Announcement Badge */}
+          {/* Announcement Badge - at the very top, with extra margin for visibility */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8, y: 30 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="mb-6"
+            className="mb-8 mt-0"
           >
             <motion.div
               whileHover={{ scale: 1.05, boxShadow: "0 0 30px rgba(255, 165, 0, 0.5)" }}
@@ -456,12 +456,12 @@ function App() {
             initial={{ opacity: 0, scale: 0.8, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="mb-0 -mt-4"
+            className="mb-6 -mt-8"
           >
             <motion.img 
               src="https://22527425.fs1.hubspotusercontent-na1.net/hubfs/22527425/incredible_india_logo-removebg-preview.png" 
               alt="Incredible India Festival Logo" 
-              className="h-64 md:h-80 lg:h-[22rem] w-auto mx-auto drop-shadow-2xl mb-0"
+              className="h-[28rem] md:h-[36rem] lg:h-[44rem] w-auto mx-auto drop-shadow-2xl mb-0"
               whileHover={{ scale: 1.05, rotate: 1 }}
               transition={{ duration: 0.3 }}
             />
@@ -684,7 +684,7 @@ function App() {
                 <FeatureCard
                   icon={Music}
                   title="Live Performances & Fashion Show"
-                  description="Experience folk & classical dances, live music performances by talented local singers awesome percussionists, and a stunning fashion showcase celebrating India's diverse cultural heritage."
+                  description="Experience folk & classical dances, live music performances by talented local singers, awesome percussionists, and a stunning fashion showcase celebrating India's diverse cultural heritage."
                 />
               </motion.div>
               
