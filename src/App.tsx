@@ -327,9 +327,9 @@ function App() {
               animate={{ opacity: 1, x: 0 }}
               className="flex items-center gap-3"
             >
-              <img src="https://22527425.fs1.hubspotusercontent-na1.net/hubfs/22527425/incredible_india_logo-removebg-preview.png" alt="Incredible India Fest" className="h-16 w-auto" />
+              <img src="https://22527425.fs1.hubspotusercontent-na1.net/hubfs/22527425/incredible_india_logo-removebg-preview.png" alt="Incredible India Festival" className="h-16 w-auto" />
               <div className="hidden sm:block">
-                <h1 className="text-xl font-bold text-gray-900">Incredible India Fest</h1>
+                <h1 className="text-xl font-bold text-gray-900">Incredible India Festival</h1>
                 <p className="text-sm text-gray-600">July 12, 2025 • Milwaukee</p>
               </div>
             </motion.div>
@@ -499,7 +499,7 @@ function App() {
                 fontSize: "1.2em"
               }}
             >
-              INDIA FEST
+              INDIA FESTIVAL
             </motion.span>
           </motion.h1>
 
@@ -544,7 +544,7 @@ function App() {
             {/* Download Button with Flyer Thumbnail */}
             <a
               href="/Festival _20250607_000852_0000.png"
-              download="Incredible_India_Fest_Flyer.png"
+              download="Incredible_India_Festival_Flyer.png"
               className="group inline-flex items-center gap-3 px-7 py-3 rounded-xl bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 text-white font-bold text-lg shadow-lg hover:scale-105 hover:shadow-pink-400/40 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-pink-300"
               style={{ textShadow: '0 2px 8px rgba(0,0,0,0.7)' }}
             >
@@ -734,7 +734,7 @@ function App() {
             >
               <motion.img 
                 src="https://22527425.fs1.hubspotusercontent-na1.net/hubfs/22527425/incredible_india_logo-removebg-preview.png" 
-                alt="Incredible India Fest Logo" 
+                alt="Incredible India Festival Logo" 
                 className="h-40 md:h-56 lg:h-72 w-auto mx-auto drop-shadow-2xl"
                 whileHover={{ scale: 1.05, rotate: 2 }}
                 transition={{ duration: 0.3 }}
@@ -1063,9 +1063,9 @@ function App() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="flex items-center gap-6 mb-8 md:mb-0">
-              <img src="https://22527425.fs1.hubspotusercontent-na1.net/hubfs/22527425/incredible_india_logo-removebg-preview.png" alt="Incredible India Fest" className="h-20 w-auto" />
+              <img src="https://22527425.fs1.hubspotusercontent-na1.net/hubfs/22527425/incredible_india_logo-removebg-preview.png" alt="Incredible India Festival" className="h-20 w-auto" />
               <div>
-                <h3 className="font-bold text-2xl">Incredible India Fest</h3>
+                <h3 className="font-bold text-2xl">Incredible India Festival</h3>
                 <p className="text-gray-400 text-lg">Presented by Sanskriti</p>
               </div>
             </div>
