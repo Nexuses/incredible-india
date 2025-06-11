@@ -155,7 +155,7 @@ function QRCodeModal({ isOpen, onClose }: { isOpen: boolean, onClose: () => void
                 className="text-center space-y-3"
               >
                 <p className="text-gray-700 font-semibold">
-                  Early Bird Special: $10 per person
+                  Early Bird Special: $8 per person
                 </p>
                 <p className="text-sm text-gray-500">
                   Use your phone's camera to scan the QR code above
@@ -171,6 +171,67 @@ function QRCodeModal({ isOpen, onClose }: { isOpen: boolean, onClose: () => void
         </>
       )}
     </AnimatePresence>
+  );
+}
+
+function SupportingPartners() {
+  return (
+    <AnimatedSection className="py-24 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute -top-24 -right-24 w-96 h-96 bg-orange-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
+        <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-pink-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
+      </div>
+
+      <div className="container mx-auto px-4 relative">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-500">Supporting Partners</span>
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+            Proudly supported by industry leaders who share our vision
+          </p>
+        </div>
+        
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              className="bg-white rounded-3xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group"
+            >
+              <div className="aspect-[3/2] relative flex items-center justify-center p-4">
+                <img 
+                  src="https://22527425.fs1.hubspotusercontent-na1.net/hubfs/22527425/image%20(19)-2.png"
+                  alt="Partner Logo 1"
+                  className="w-full h-full object-contain filter group-hover:brightness-105 transition-all duration-300"
+                />
+              </div>
+            </motion.div>
+            
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              className="bg-white rounded-3xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group"
+            >
+              <div className="aspect-[3/2] relative flex items-center justify-center p-4">
+                <img 
+                  src="https://22527425.fs1.hubspotusercontent-na1.net/hubfs/22527425/WhatsApp%20Image%202025-06-10%20at%2020.25.07_c354347d.jpg"
+                  alt="Partner Logo 2"
+                  className="w-full h-full object-contain filter group-hover:brightness-105 transition-all duration-300"
+                />
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Trust indicators */}
+          <div className="mt-16 text-center">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 rounded-full border border-gray-100">
+              <span className="text-sm font-medium text-gray-600">Trusted by Industry Leaders</span>
+              <span className="flex h-2 w-2 rounded-full bg-green-500"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </AnimatedSection>
   );
 }
 
@@ -384,7 +445,7 @@ function App() {
             >
               <div className="bg-black/80 backdrop-blur-sm px-6 py-3 rounded-full">
                 <span className="text-white font-bold text-base md:text-xl tracking-wide">
-                  ✨ SANSKRITI PRESENTS ✨
+                  ✨ <span className="text-xl md:text-2xl">SANSKRITI</span> <span className="text-sm md:text-lg">PRESENTS</span> ✨
                 </span>
               </div>
             </motion.div>
@@ -512,35 +573,33 @@ function App() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.5 }}
-            className="flex flex-col sm:flex-row gap-6 justify-center mt-12"
+            className="flex justify-center mt-12"
           >
             <motion.button
               whileHover={{ 
-                scale: 1.05, 
-                boxShadow: "0 0 40px rgba(255, 165, 0, 0.6)",
+                scale: 1.08,
+                y: -8,
+                boxShadow: "0 0 50px rgba(255, 165, 0, 0.8)",
                 rotate: [0, -1, 1, 0]
               }}
               whileTap={{ scale: 0.95 }}
-              onClick={openQRModal}
-              className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 text-white px-8 py-4 rounded-full font-bold text-lg md:text-xl shadow-2xl hover:shadow-orange-500/25 transition-all duration-300 flex items-center gap-3 justify-center border-2 border-white/20"
-              style={{ textShadow: '0 2px 8px rgba(0,0,0,0.7)' }}
-            >
-              <Zap className="w-5 h-5" />
-              Get Early Bird Tickets - $8
-              <ArrowRight className="w-5 h-5" />
-            </motion.button>
-            
-            <motion.button
-              whileHover={{ 
-                scale: 1.05,
-                backgroundColor: "rgba(255, 255, 255, 0.2)"
+              animate={{
+                boxShadow: [
+                  "0 0 20px rgba(255, 165, 0, 0.3)",
+                  "0 0 40px rgba(255, 165, 0, 0.6)",
+                  "0 0 20px rgba(255, 165, 0, 0.3)"
+                ]
               }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-black/40 backdrop-blur-md text-white border-2 border-white/50 px-8 py-4 rounded-full font-bold text-lg md:text-xl hover:bg-white/20 transition-all duration-300 flex items-center gap-3 justify-center"
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+              onClick={openQRModal}
+              className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 text-white px-16 py-5 rounded-full font-bold text-2xl shadow-2xl hover:shadow-orange-500/25 transition-all duration-300 max-w-md w-full"
               style={{ textShadow: '0 2px 8px rgba(0,0,0,0.7)' }}
             >
-              <Play className="w-5 h-5" />
-              Experience the Magic
+              Get Early Bird Tickets - $8
             </motion.button>
           </motion.div>
         </motion.div>
@@ -720,17 +779,34 @@ function App() {
                   </div>
                   
                   <div className="mb-8">
-                    <span className="text-6xl md:text-8xl font-black text-gray-900">$10</span>
+                    <span className="text-6xl md:text-8xl font-black text-gray-900">$8</span>
                     <span className="text-2xl md:text-3xl text-gray-600 ml-4">per person</span>
                   </div>
 
                   <p className="text-xl md:text-2xl text-gray-600 mb-12 font-semibold">
-                    Price increases to $12 after June 30th, 2025
+                    Price increases to $10 after June 30th, 2025
                   </p>
 
                   <motion.button
-                    whileHover={{ scale: 1.05 }}
+                    whileHover={{ 
+                      scale: 1.08,
+                      y: -8,
+                      boxShadow: "0 0 50px rgba(255, 165, 0, 0.8)",
+                      rotate: [0, -1, 1, 0]
+                    }}
                     whileTap={{ scale: 0.95 }}
+                    animate={{
+                      boxShadow: [
+                        "0 0 20px rgba(255, 165, 0, 0.3)",
+                        "0 0 40px rgba(255, 165, 0, 0.6)",
+                        "0 0 20px rgba(255, 165, 0, 0.3)"
+                      ]
+                    }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      ease: "easeInOut"
+                    }}
                     onClick={openQRModal}
                     className="w-full bg-gradient-to-r from-orange-500 to-pink-500 text-white py-6 px-12 rounded-2xl font-bold text-2xl shadow-xl hover:shadow-2xl transition-all duration-300 mb-4"
                   >
@@ -795,7 +871,7 @@ function App() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={() => {
-                      window.open('https://forms.gle/iXjdgyawMCjZZ34j6', '_blank');
+                      window.open('https://docs.google.com/forms/d/e/1FAIpQLSei3waFHNyGo08jJzGWR28ET54aIUSpXsyxjomC7ssGUxfKcA/viewform?usp=header', '_blank');
                     }}
                     className="bg-gradient-to-r from-orange-500 to-pink-500 text-white px-10 py-4 rounded-full font-bold text-lg hover:shadow-lg transition-all duration-300 flex items-center gap-3 justify-center"
                   >
@@ -868,7 +944,7 @@ function App() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={() => {
-                      window.open('https://forms.gle/cPj57Aw36uu6S1oB8', '_blank');
+                      window.open('https://docs.google.com/forms/d/e/1FAIpQLSdhGHzFfjIH9_Xii0wKvITsVdVOaUJwO_8o6dvK9zPUTMfhIQ/viewform?usp=header', '_blank');
                     }}
                     className="bg-gradient-to-r from-orange-500 to-pink-500 text-white px-10 py-4 rounded-full font-bold text-lg hover:shadow-lg transition-all duration-300 flex items-center gap-3 justify-center"
                   >
@@ -979,6 +1055,9 @@ function App() {
         </section>
       </AnimatedSection>
 
+      {/* Add SupportingPartners before the footer */}
+      <SupportingPartners />
+      
       {/* Footer */}
       <footer className="bg-black text-white py-16">
         <div className="container mx-auto px-4">
