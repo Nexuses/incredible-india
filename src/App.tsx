@@ -403,7 +403,7 @@ function App() {
       {/* Enhanced Hero Section */}
       <section
         id="home"
-        className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 md:pt-32"
+        className="relative min-h-screen flex items-center justify-center overflow-hidden pt-12 md:pt-16"
         style={{ backgroundImage: "url('https://4536150.fs1.hubspotusercontent-na1.net/hubfs/4536150/Canva%20images/dl.beatsnoop.com-3000-vE2rhFRz71.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
         {/* Enhanced dark overlay for readability */}
@@ -456,12 +456,12 @@ function App() {
             initial={{ opacity: 0, scale: 0.8, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="mb-6"
+            className="mb-0 -mt-4"
           >
             <motion.img 
               src="https://22527425.fs1.hubspotusercontent-na1.net/hubfs/22527425/incredible_india_logo-removebg-preview.png" 
               alt="Incredible India Festival Logo" 
-              className="h-40 md:h-56 lg:h-72 w-auto mx-auto drop-shadow-2xl"
+              className="h-64 md:h-80 lg:h-[22rem] w-auto mx-auto drop-shadow-2xl mb-0"
               whileHover={{ scale: 1.05, rotate: 1 }}
               transition={{ duration: 0.3 }}
             />
@@ -472,7 +472,7 @@ function App() {
             initial={{ opacity: 0, y: 50, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
-            className="text-3xl md:text-5xl lg:text-6xl font-black text-white mb-4 leading-tight drop-shadow-2xl" style={{ textShadow: '0 2px 16px rgba(0,0,0,0.7), 0 1px 2px rgba(0,0,0,0.5)' }}
+            className="text-3xl md:text-5xl lg:text-6xl font-black text-white mb-2 leading-tight drop-shadow-2xl -mt-8" style={{ textShadow: '0 2px 16px rgba(0,0,0,0.7), 0 1px 2px rgba(0,0,0,0.5)' }}
           >
             <motion.span
               animate={{ 
