@@ -266,7 +266,7 @@ function App() {
               animate={{ opacity: 1, x: 0 }}
               className="flex items-center gap-3"
             >
-              <img src="https://4536150.fs1.hubspotusercontent-na1.net/hubfs/4536150/Canva%20images/incredible_india_transparent%20(1).png" alt="Incredible India Fest" className="h-16 w-auto" />
+              <img src="https://22527425.fs1.hubspotusercontent-na1.net/hubfs/22527425/incredible_india_logo-removebg-preview.png" alt="Incredible India Fest" className="h-16 w-auto" />
               <div className="hidden sm:block">
                 <h1 className="text-xl font-bold text-gray-900">Incredible India Fest</h1>
                 <p className="text-sm text-gray-600">July 12, 2025 • Milwaukee</p>
@@ -342,7 +342,7 @@ function App() {
       {/* Enhanced Hero Section */}
       <section
         id="home"
-        className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32"
+        className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 md:pt-32"
         style={{ backgroundImage: "url('https://4536150.fs1.hubspotusercontent-na1.net/hubfs/4536150/Canva%20images/dl.beatsnoop.com-3000-vE2rhFRz71.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
         {/* Enhanced dark overlay for readability */}
@@ -369,7 +369,7 @@ function App() {
 
         <motion.div
           style={{ y: heroY, opacity: heroOpacity }}
-          className="relative z-20 text-center px-4 pr-8 max-w-6xl mx-auto"
+          className="relative z-20 text-center px-6 md:px-8 max-w-5xl mx-auto"
         >
           {/* Announcement Badge */}
           <motion.div
@@ -383,7 +383,7 @@ function App() {
               className="inline-block bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 p-1 rounded-full shadow-2xl"
             >
               <div className="bg-black/80 backdrop-blur-sm px-6 py-3 rounded-full">
-                <span className="text-white font-bold text-xs md:text-sm tracking-wide">
+                <span className="text-white font-bold text-base md:text-xl tracking-wide">
                   ✨ SANSKRITI PRESENTS ✨
                 </span>
               </div>
@@ -398,9 +398,9 @@ function App() {
             className="mb-6"
           >
             <motion.img 
-              src="https://4536150.fs1.hubspotusercontent-na1.net/hubfs/4536150/Canva%20images/incredible_india_transparent%20(1).png" 
+              src="https://22527425.fs1.hubspotusercontent-na1.net/hubfs/22527425/incredible_india_logo-removebg-preview.png" 
               alt="Incredible India Festival Logo" 
-              className="h-24 md:h-32 lg:h-36 w-auto mx-auto drop-shadow-2xl"
+              className="h-40 md:h-56 lg:h-72 w-auto mx-auto drop-shadow-2xl"
               whileHover={{ scale: 1.05, rotate: 1 }}
               transition={{ duration: 0.3 }}
             />
@@ -432,7 +432,11 @@ function App() {
                 backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"]
               }}
               transition={{ duration: 4, repeat: Infinity }}
-              style={{ backgroundSize: "200% 200%" }}
+              style={{ 
+                backgroundSize: "200% 200%",
+                textShadow: "0 2px 20px rgba(0,0,0,0.5)",
+                fontSize: "1.2em"
+              }}
             >
               INDIA FEST
             </motion.span>
@@ -478,14 +482,14 @@ function App() {
           >
             {/* Download Button with Flyer Thumbnail */}
             <a
-              href="/image (16).png"
+              href="/Festival _20250607_000852_0000.png"
               download="Incredible_India_Fest_Flyer.png"
               className="group inline-flex items-center gap-3 px-7 py-3 rounded-xl bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 text-white font-bold text-lg shadow-lg hover:scale-105 hover:shadow-pink-400/40 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-pink-300"
               style={{ textShadow: '0 2px 8px rgba(0,0,0,0.7)' }}
             >
               <div className="relative flex items-center">
                 <img 
-                  src="/image (16).png" 
+                  src="/Festival _20250607_000852_0000.png" 
                   alt="Flyer thumbnail" 
                   className="w-10 h-10 rounded-lg shadow-md border-2 border-white/60 bg-white object-cover" 
                   style={{ background: 'white' }}
@@ -508,7 +512,7 @@ function App() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.5 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
+            className="flex flex-col sm:flex-row gap-6 justify-center mt-12"
           >
             <motion.button
               whileHover={{ 
@@ -522,7 +526,7 @@ function App() {
               style={{ textShadow: '0 2px 8px rgba(0,0,0,0.7)' }}
             >
               <Zap className="w-5 h-5" />
-              Get Early Bird Tickets - $10
+              Get Early Bird Tickets - $8
               <ArrowRight className="w-5 h-5" />
             </motion.button>
             
@@ -591,9 +595,9 @@ function App() {
 
       {/* Experience Section */}
       <AnimatedSection>
-        <section id="experience" className="py-24 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-20">
+        <section id="experience" className="py-20 md:py-32 bg-white">
+          <div className="container mx-auto px-6 md:px-8">
+            <div className="text-center mb-16 md:mb-24">
               <motion.h2
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -621,7 +625,7 @@ function App() {
                 <FeatureCard
                   icon={Music}
                   title="Live Performances & Fashion Show"
-                  description="Experience traditional dances, live music performances, and a stunning fashion showcase celebrating India's diverse cultural heritage."
+                  description="Experience folk & classical dances, live music performances by talented local singers awesome percussionists, and a stunning fashion showcase celebrating India's diverse cultural heritage."
                 />
               </motion.div>
               
@@ -645,7 +649,7 @@ function App() {
                 <FeatureCard
                   icon={Palette}
                   title="Art Exhibits & Cultural Activities"
-                  description="Discover beautiful jewelry, intricate henna art, cultural exhibits, and family-friendly activities showcasing Indian artistic traditions."
+                  description="Discover beautiful jewelry, indian outfits, intricate henna art, cultural exhibits, cricket booth, and family-friendly activities showcasing Indian artistic traditions."
                 />
               </motion.div>
 
@@ -657,7 +661,7 @@ function App() {
                 <FeatureCard
                   icon={Gamepad2}
                   title="Games"
-                  description="Enjoy traditional Indian games and fun activities for all ages. From classic board games to interactive cultural experiences that bring families together."
+                  description="Enjoy traditional Indian games and fun activities for all ages. From interactive cultural experiences that bring families together to water-balloon fights for kids and Indian games for seniors as well."
                 />
               </motion.div>
             </div>
@@ -670,7 +674,7 @@ function App() {
               className="text-center"
             >
               <motion.img 
-                src="https://4536150.fs1.hubspotusercontent-na1.net/hubfs/4536150/Canva%20images/incredible_india_transparent%20(1).png" 
+                src="https://22527425.fs1.hubspotusercontent-na1.net/hubfs/22527425/incredible_india_logo-removebg-preview.png" 
                 alt="Incredible India Fest Logo" 
                 className="h-40 md:h-56 lg:h-72 w-auto mx-auto drop-shadow-2xl"
                 whileHover={{ scale: 1.05, rotate: 2 }}
@@ -683,10 +687,10 @@ function App() {
 
       {/* Tickets Section */}
       <AnimatedSection>
-        <section id="tickets" className="py-24 bg-gradient-to-br from-orange-50 to-pink-50">
-          <div className="container mx-auto px-4">
+        <section id="tickets" className="py-20 md:py-32 bg-gradient-to-br from-orange-50 to-pink-50">
+          <div className="container mx-auto px-6 md:px-8">
             <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-16">
+              <div className="text-center mb-12 md:mb-20">
                 <motion.h2
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -708,7 +712,7 @@ function App() {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="bg-white rounded-3xl p-12 md:p-16 shadow-2xl border border-gray-100"
+                className="bg-white rounded-3xl p-8 md:p-12 lg:p-16 shadow-2xl border border-gray-100"
               >
                 <div className="text-center">
                   <div className="inline-block bg-gradient-to-r from-orange-500 to-pink-500 text-white px-8 py-3 rounded-full text-lg font-bold mb-8 shadow-lg">
@@ -738,7 +742,9 @@ function App() {
                   </p>
 
                   <div className="border-t border-gray-200 pt-12">
-                    <h4 className="text-2xl font-bold text-gray-900 mb-8">Contact for Group Discount</h4>
+                    <div className="inline-block bg-gradient-to-r from-orange-500 to-pink-500 text-white px-8 py-3 rounded-full text-lg font-bold mb-8 shadow-lg">
+                      CONTACT FOR GROUP DISCOUNT
+                    </div>
                     <p className="text-lg text-gray-600 font-medium mb-6">Contact: Shefali Vallecha</p>
                     <div className="space-y-6">
                       <div className="flex items-center justify-center gap-4">
@@ -764,16 +770,16 @@ function App() {
 
       {/* Info Section */}
       <AnimatedSection>
-        <section id="info" className="py-24 bg-gray-900 text-white">
-          <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <section id="info" className="py-20 md:py-32 bg-gray-900 text-white">
+          <div className="container mx-auto px-6 md:px-8">
+            <div className="grid lg:grid-cols-2 gap-12 md:gap-16 items-center">
               <div>
                 <motion.h2
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   className="text-4xl md:text-5xl font-bold mb-8"
                 >
-                  Sponsorship & Vendor Opportunities
+                  Vendor Opportunities
                 </motion.h2>
                 <motion.p
                   initial={{ opacity: 0, y: 30 }}
@@ -789,20 +795,12 @@ function App() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={() => {
-                      window.open('https://mail.google.com/mail/?view=cm&fs=1&to=admin@sanskritiusa.org&su=Sponsorship Inquiry - Incredible India Fest&body=Hello,%0A%0AI am interested in sponsoring the Incredible India Fest. Please provide more information about sponsorship opportunities.%0A%0ABest regards,', '_blank');
+                      window.open('https://forms.gle/iXjdgyawMCjZZ34j6', '_blank');
                     }}
                     className="bg-gradient-to-r from-orange-500 to-pink-500 text-white px-10 py-4 rounded-full font-bold text-lg hover:shadow-lg transition-all duration-300 flex items-center gap-3 justify-center"
                   >
                     <Mail className="w-6 h-6" />
-                    Contact for Sponsorship
-                  </motion.button>
-                  <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="border-2 border-white/50 text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-all duration-300 flex items-center gap-3 justify-center"
-                  >
-                    <Users className="w-6 h-6" />
-                    Apply Now
+                    Contact for Vendor Opportunities
                   </motion.button>
                 </div>
               </div>
@@ -843,11 +841,90 @@ function App() {
         </section>
       </AnimatedSection>
 
+      {/* Sponsorship Section */}
+      <AnimatedSection>
+        <section className="py-20 md:py-32 bg-gradient-to-br from-orange-50 via-pink-50 to-purple-50">
+          <div className="container mx-auto px-6 md:px-8">
+            <div className="grid lg:grid-cols-2 gap-12 md:gap-16 items-center">
+              <div>
+                <motion.h2
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  className="text-4xl md:text-5xl font-bold mb-8 text-gray-900"
+                >
+                  Sponsorship Opportunities
+                </motion.h2>
+                <motion.p
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.2 }}
+                  className="text-xl md:text-2xl text-gray-700 mb-12 leading-relaxed"
+                >
+                  Partner with us to make this historic celebration even more special. 
+                  Get exclusive visibility and connect with thousands of attendees.
+                </motion.p>
+                <div className="flex flex-col sm:flex-row gap-6">
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    onClick={() => {
+                      window.open('https://forms.gle/cPj57Aw36uu6S1oB8', '_blank');
+                    }}
+                    className="bg-gradient-to-r from-orange-500 to-pink-500 text-white px-10 py-4 rounded-full font-bold text-lg hover:shadow-lg transition-all duration-300 flex items-center gap-3 justify-center"
+                  >
+                    <Mail className="w-6 h-6" />
+                    Contact for Sponsorship
+                  </motion.button>
+                </div>
+              </div>
+              
+              <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                className="bg-white/80 backdrop-blur-md rounded-3xl p-12 border border-orange-200 shadow-2xl"
+              >
+                <h3 className="text-3xl font-bold mb-10 text-center text-gray-900">Sponsorship Benefits</h3>
+                <div className="space-y-8">
+                  <div className="flex items-center gap-6">
+                    <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-pink-500 rounded-xl flex items-center justify-center">
+                      <Users className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <p className="font-bold text-xl text-gray-900">Brand Visibility</p>
+                      <p className="text-gray-600 text-lg">Reach thousands of attendees and community members</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-6">
+                    <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-pink-500 rounded-xl flex items-center justify-center">
+                      <Globe className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <p className="font-bold text-xl text-gray-900">Community Impact</p>
+                      <p className="text-gray-600 text-lg">Support cultural celebration and community engagement</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-6">
+                    <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-pink-500 rounded-xl flex items-center justify-center">
+                      <Sparkles className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <p className="font-bold text-xl text-gray-900">Exclusive Benefits</p>
+                      <p className="text-gray-600 text-lg">Custom sponsorship packages available</p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+      </AnimatedSection>
+
       {/* About Section */}
       <AnimatedSection>
-        <section id="about" className="py-24 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center mb-16">
+        <section id="about" className="py-20 md:py-32 bg-gray-50">
+          <div className="container mx-auto px-6 md:px-8">
+            <div className="max-w-4xl mx-auto text-center mb-16 md:mb-24">
               <motion.h2
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -883,7 +960,7 @@ function App() {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="bg-gradient-to-br from-orange-500 to-pink-500 rounded-3xl p-12 md:p-16 text-white text-center shadow-2xl"
+              className="bg-gradient-to-br from-orange-500 to-pink-500 rounded-3xl p-8 md:p-12 lg:p-16 text-white text-center shadow-2xl"
             >
               <Sparkles className="w-16 h-16 mx-auto mb-8 opacity-90" />
               <h3 className="text-3xl md:text-5xl font-bold mb-6">
@@ -907,7 +984,7 @@ function App() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="flex items-center gap-6 mb-8 md:mb-0">
-              <img src="https://4536150.fs1.hubspotusercontent-na1.net/hubfs/4536150/Canva%20images/incredible_india_transparent%20(1).png" alt="Incredible India Fest" className="h-20 w-auto" />
+              <img src="https://22527425.fs1.hubspotusercontent-na1.net/hubfs/22527425/incredible_india_logo-removebg-preview.png" alt="Incredible India Fest" className="h-20 w-auto" />
               <div>
                 <h3 className="font-bold text-2xl">Incredible India Fest</h3>
                 <p className="text-gray-400 text-lg">Presented by Sanskriti</p>
