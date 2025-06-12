@@ -1037,7 +1037,7 @@ function App() {
             >
               <Sparkles className="w-16 h-16 mx-auto mb-8 opacity-90" />
               <h3 className="text-3xl md:text-5xl font-bold mb-6">
-                Let's celebrate the Incredible India with in us!
+                Let's celebrate the Incredible India within us!
               </h3>
               <p className="text-xl md:text-2xl opacity-95 max-w-4xl mx-auto leading-relaxed">
                 The festival will feature live performances, authentic Indian food trucks and stalls, art exhibits, 
