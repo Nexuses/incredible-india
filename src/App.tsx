@@ -141,7 +141,7 @@ function QRCodeModal({ isOpen, onClose }: { isOpen: boolean, onClose: () => void
                 className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-6 border-2 border-gray-100 mb-6"
               >
                 <img 
-                  src="/image (17).png" 
+                  src="https://22527425.fs1.hubspotusercontent-na1.net/hubfs/22527425/fa2224b2-8b84-4d3a-8c37-b9328a3a9088.jpg" 
                   alt="QR Code for Ticket Purchase" 
                   className="w-full h-auto max-w-xs mx-auto rounded-xl shadow-lg"
                 />
@@ -577,16 +577,15 @@ function App() {
           >
             <motion.button
               whileHover={{ 
-                scale: 1.08,
-                y: -8,
-                boxShadow: "0 0 50px rgba(255, 165, 0, 0.8)",
-                rotate: [0, -1, 1, 0]
+                scale: 1.05,
+                y: -5,
+                boxShadow: "0 0 30px rgba(255, 165, 0, 0.6)"
               }}
-              whileTap={{ scale: 0.95 }}
+              whileTap={{ scale: 0.98 }}
               animate={{
                 boxShadow: [
                   "0 0 20px rgba(255, 165, 0, 0.3)",
-                  "0 0 40px rgba(255, 165, 0, 0.6)",
+                  "0 0 30px rgba(255, 165, 0, 0.5)",
                   "0 0 20px rgba(255, 165, 0, 0.3)"
                 ]
               }}
@@ -596,10 +595,9 @@ function App() {
                 ease: "easeInOut"
               }}
               onClick={openQRModal}
-              className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 text-white px-16 py-5 rounded-full font-bold text-2xl shadow-2xl hover:shadow-orange-500/25 transition-all duration-300 max-w-md w-full"
-              style={{ textShadow: '0 2px 8px rgba(0,0,0,0.7)' }}
+              className="w-full bg-gradient-to-r from-orange-500 to-pink-500 text-white py-6 px-12 rounded-2xl font-bold text-2xl shadow-xl hover:shadow-2xl transition-all duration-300 mb-4"
             >
-              Get Early Bird Tickets - $8
+              Buy Tickets Now
             </motion.button>
           </motion.div>
         </motion.div>
@@ -789,16 +787,15 @@ function App() {
 
                   <motion.button
                     whileHover={{ 
-                      scale: 1.08,
-                      y: -8,
-                      boxShadow: "0 0 50px rgba(255, 165, 0, 0.8)",
-                      rotate: [0, -1, 1, 0]
+                      scale: 1.05,
+                      y: -5,
+                      boxShadow: "0 0 30px rgba(255, 165, 0, 0.6)"
                     }}
-                    whileTap={{ scale: 0.95 }}
+                    whileTap={{ scale: 0.98 }}
                     animate={{
                       boxShadow: [
                         "0 0 20px rgba(255, 165, 0, 0.3)",
-                        "0 0 40px rgba(255, 165, 0, 0.6)",
+                        "0 0 30px rgba(255, 165, 0, 0.5)",
                         "0 0 20px rgba(255, 165, 0, 0.3)"
                       ]
                     }}
@@ -1040,7 +1037,7 @@ function App() {
             >
               <Sparkles className="w-16 h-16 mx-auto mb-8 opacity-90" />
               <h3 className="text-3xl md:text-5xl font-bold mb-6">
-                Let's celebrate Incredible India in all of us!
+                Let's celebrate the Incredible India with in us!
               </h3>
               <p className="text-xl md:text-2xl opacity-95 max-w-4xl mx-auto leading-relaxed">
                 The festival will feature live performances, authentic Indian food trucks and stalls, art exhibits, 
