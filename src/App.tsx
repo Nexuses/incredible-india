@@ -520,7 +520,8 @@ function App() {
               whileHover={{ scale: 1.02 }}
               className="text-base md:text-xl lg:text-2xl text-orange-200 font-semibold max-w-3xl mx-auto leading-relaxed"
             >
-              First time ever at the iconic Summerfest Grounds
+              First time ever at the iconic <br />
+              Henry Maier Festival Park, Milwaukee
             </motion.p>
           </motion.div>
 
