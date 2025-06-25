@@ -37,13 +37,13 @@ function SponsorsPage() {
 
       <main className="pt-24 pb-16">
         {/* Hero Section */}
-        <section className="bg-gradient-to-b from-orange-50 to-white py-16">
+        <section className="bg-gradient-to-b from-orange-50 to-white py-8">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-6"
             >
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                 Our{" "}
@@ -51,12 +51,15 @@ function SponsorsPage() {
                   Sponsors
                 </span>
               </h1>
+              <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+                We are grateful to our sponsors who have made the Incredible India Festival possible
+              </p>
             </motion.div>
           </div>
         </section>
 
         {/* Large Sponsors Section */}
-        <section className="py-16">
+        <section className="py-8">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
