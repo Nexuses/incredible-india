@@ -1,5 +1,29 @@
 import React, { useEffect, useState } from 'react';
-import { Calendar, Clock, MapPin, Music, Utensils, Palette, Users, Star, Mail, Phone, Menu, X, ArrowRight, Play, Globe, Sparkles, Crown, Zap, QrCode, Gamepad2 } from 'lucide-react';
+import {
+  Calendar,
+  Clock,
+  MapPin,
+  Music,
+  Utensils,
+  Palette,
+  Users,
+  Star,
+  Mail,
+  Phone,
+  Menu,
+  X,
+  ArrowRight,
+  Play,
+  Globe,
+  Sparkles,
+  Crown,
+  Zap,
+  QrCode,
+  Gamepad2,
+  Instagram,
+  Twitter,
+  Cloud,
+} from 'lucide-react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -520,7 +544,8 @@ function App() {
               whileHover={{ scale: 1.02 }}
               className="text-base md:text-xl lg:text-2xl text-orange-200 font-semibold max-w-3xl mx-auto leading-relaxed"
             >
-              First time ever at the iconic Summerfest Grounds
+              First time ever at the iconic <br />
+              Henry Maier Festival Park, Milwaukee
             </motion.p>
           </motion.div>
 
@@ -1074,6 +1099,32 @@ function App() {
                 Incredible India Festival - Milwaukee, Wisconsin
               </p>
             </div>
+          </div>
+          <div className="mt-8 flex justify-center gap-6">
+            <a
+              href="https://instagram.com/incredibleindiafestivalmke"
+              aria-label="Instagram"
+              className="hover:text-orange-400 flex items-center gap-2"
+            >
+              <Instagram className="w-6 h-6" />
+              <span className="sr-only">Instagram</span>
+            </a>
+            <a
+              href="https://twitter.com/incredindiamke"
+              aria-label="Twitter"
+              className="hover:text-orange-400 flex items-center gap-2"
+            >
+              <Twitter className="w-6 h-6" />
+              <span className="sr-only">Twitter</span>
+            </a>
+            <a
+              href="https://bsky.app/profile/incredibleindiamke"
+              aria-label="Bluesky"
+              className="hover:text-orange-400 flex items-center gap-2"
+            >
+              <Cloud className="w-6 h-6" />
+              <span className="sr-only">Bluesky</span>
+            </a>
           </div>
         </div>
       </footer>
