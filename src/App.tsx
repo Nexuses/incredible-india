@@ -239,10 +239,10 @@ function SupportingPartners() {
         </div>
 
         <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center mb-12">
             <motion.div
               whileHover={{ scale: 1.02 }}
-              className="bg-white rounded-3xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group"
+              className="bg-white rounded-3xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group"
             >
               <div className="aspect-[3/2] relative flex items-center justify-center p-4">
                 <img
@@ -255,7 +255,7 @@ function SupportingPartners() {
 
             <motion.div
               whileHover={{ scale: 1.02 }}
-              className="bg-white rounded-3xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group"
+              className="bg-white rounded-3xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group"
             >
               <div className="aspect-[3/2] relative flex items-center justify-center p-4">
                 <img
@@ -265,94 +265,43 @@ function SupportingPartners() {
                 />
               </div>
             </motion.div>
+            
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              className="bg-white rounded-3xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group"
+            >
+              <div className="aspect-[3/2] relative flex items-center justify-center p-4">
+                <img
+                  src="/sponsors/big/aapi.png"
+                  alt="AAPI"
+                  className="w-full h-full object-contain filter group-hover:brightness-105 transition-all duration-300"
+                />
+              </div>
+            </motion.div>
           </div>
 
           {/* Trust indicators */}
-          <div className="mt-16 text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 rounded-full border border-gray-100">
+          <div className="mt-8 text-center">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 rounded-full border border-gray-100 mb-8">
               <span className="text-sm font-medium text-gray-600">
                 Trusted by Industry Leaders
               </span>
               <span className="flex h-2 w-2 rounded-full bg-green-500"></span>
             </div>
-          </div>
-        </div>
-      </div>
-    </AnimatedSection>
-  );
-}
-
-function SponsorsPreview() {
-  return (
-    <AnimatedSection className="py-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-24 -left-24 w-96 h-96 bg-orange-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
-        <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-pink-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
-      </div>
-
-      <div className="container mx-auto px-4 relative">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Our{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-500">
-              Sponsors
-            </span>
-          </h2>
-        </div>
-
-        <div className="max-w-5xl mx-auto mb-12">
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
-            {/* Major Sponsors Preview */}
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center"
-            >
-              <img
-                src="/sponsors/big/aapi.png"
-                alt="AAPI"
-                className="h-24 object-contain mb-4"
-              />
-              <h3 className="text-lg font-semibold text-gray-800">AAPI</h3>
-            </motion.div>
             
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center"
-            >
-              <img
-                src="/sponsors/big/mars.png"
-                alt="Mars"
-                className="h-24 object-contain mb-4"
-              />
-              <h3 className="text-lg font-semibold text-gray-800">Mars</h3>
-            </motion.div>
-            
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center"
-            >
-              <img
-                src="/sponsors/big/creativemoods.jpg"
-                alt="Creative Moods"
-                className="h-24 object-contain mb-4"
-              />
-              <h3 className="text-lg font-semibold text-gray-800">Creative Moods</h3>
-            </motion.div>
+            <div className="mt-8">
+              <Link to="/sponsors">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="bg-gradient-to-r from-orange-500 to-pink-500 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 inline-flex items-center gap-2"
+                >
+                  View All Sponsors
+                  <ArrowRight className="w-5 h-5" />
+                </motion.button>
+              </Link>
+            </div>
           </div>
-        </div>
-
-        <div className="text-center">
-          <Link to="/sponsors">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-gradient-to-r from-orange-500 to-pink-500 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 inline-flex items-center gap-2"
-            >
-              View All Sponsors
-              <ArrowRight className="w-5 h-5" />
-            </motion.button>
-          </Link>
         </div>
       </div>
     </AnimatedSection>
@@ -980,9 +929,6 @@ function App() {
 
       {/* Add SupportingPartners before the footer */}
       <SupportingPartners />
-
-      {/* Add SponsorsPreview before the footer */}
-      <SponsorsPreview />
       
       {/* Footer */}
       <Footer />
