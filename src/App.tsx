@@ -567,14 +567,14 @@ function App() {
           >
             {/* Download Button with Flyer Thumbnail */}
             <a
-              href="/Incredible_India_Festival_Flyer.png"
-              download="Incredible_India_Festival_Flyer.png"
+              href="/real-flyer.png"
+              download="real-flyer.png"
               className="group inline-flex items-center gap-3 px-7 py-3 rounded-xl bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 text-white font-bold text-lg shadow-lg hover:scale-105 hover:shadow-pink-400/40 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-pink-300"
               style={{ textShadow: "0 2px 8px rgba(0,0,0,0.7)" }}
             >
               <div className="relative flex items-center">
                 <img
-                  src="/Incredible_India_Festival_Flyer.png"
+                  src="/real-flyer.png"
                   alt="Flyer thumbnail"
                   className="w-10 h-10 rounded-lg shadow-md border-2 border-white/60 bg-white object-cover"
                   style={{ background: "white" }}
