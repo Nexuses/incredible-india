@@ -822,7 +822,7 @@ function App() {
               <h3 className="text-xl font-bold text-gray-900 mb-4">Location & Time</h3>
               <p className="text-gray-700 mb-4">
                 <strong>Date:</strong> July 12, 2025<br />
-                <strong>Time:</strong> 11:00 AM - 10:00 PM<br />
+                <strong>Time:</strong> 12:00 PM - 7:00 PM<br />
                 <strong>Venue:</strong> Henry Maier Festival Park, Milwaukee
               </p>
               <div className="rounded-xl overflow-hidden h-48 bg-gray-100">
