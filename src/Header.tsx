@@ -86,8 +86,13 @@ function Header({ openQRModal }: HeaderProps) {
     setIsNavOpen(false);
     
     // If it's the home link and we're already on the homepage, scroll to top
-    if (item.id === "home" && location.pathname === "/") {
-      scrollToTop();
+    if (item.id === "home") {
+      if (location.pathname === "/") {
+        scrollToTop();
+      } else {
+        // If we're on a different page (like Policies or Sponsors), navigate to home
+        navigate("/");
+      }
       return;
     }
     
@@ -130,7 +135,16 @@ function Header({ openQRModal }: HeaderProps) {
             animate={{ opacity: 1, x: 0 }}
             className="flex items-center gap-3"
           >
-            <Link to="/" onClick={() => location.pathname === "/" && scrollToTop()}>
+            <Link 
+              to="/" 
+              onClick={(e) => {
+                if (location.pathname === "/") {
+                  e.preventDefault();
+                  scrollToTop();
+                }
+                // For other pages, let the default navigation happen
+              }}
+            >
               <img
                 src="https://22527425.fs1.hubspotusercontent-na1.net/hubfs/22527425/incredible_india_logo-removebg-preview.png"
                 alt="Incredible India Festival"
