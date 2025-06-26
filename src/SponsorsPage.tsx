@@ -25,10 +25,8 @@ function SponsorsPage() {
     { name: "Sponsor 7", image: "/sponsors/small/image (17).png" },
     { name: "Sponsor 8", image: "/sponsors/small/image (18).png" },
     { name: "New Sponsor", image: "https://i.imgur.com/AR3gtJ3.png" },
+    { name: "Indian Groceries and Spices, Milwaukee", isText: true },
   ];
-
-  // Text-only sponsor
-  const textSponsor = "Indian Groceries and Spices, Milwaukee";
 
   // Media sponsors
   const mediaSponsors = [
@@ -133,28 +131,21 @@ function SponsorsPage() {
                   whileHover={{ scale: 1.05 }}
                   className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-all duration-300 flex flex-col items-center justify-center"
                 >
-                  <img
-                    src={sponsor.image}
-                    alt={sponsor.name}
-                    className="h-20 object-contain"
-                  />
+                  {sponsor.isText ? (
+                    <div className="h-full w-full flex items-center justify-center bg-gradient-to-r from-orange-50 to-pink-50 rounded-lg p-3 border border-orange-100">
+                      <h3 className="text-center font-semibold text-gray-800 px-2">
+                        {sponsor.name}
+                      </h3>
+                    </div>
+                  ) : (
+                    <img
+                      src={sponsor.image}
+                      alt={sponsor.name}
+                      className="h-20 object-contain"
+                    />
+                  )}
                 </motion.div>
               ))}
-            </div>
-            
-            {/* Text sponsor added to Supporting Sponsors section */}
-            <div className="max-w-3xl mx-auto mt-8">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.7 }}
-                whileHover={{ scale: 1.02 }}
-                className="bg-gradient-to-r from-orange-50 to-pink-50 rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-orange-100"
-              >
-                <h3 className="text-xl font-semibold text-gray-800 text-center">
-                  {textSponsor}
-                </h3>
-              </motion.div>
             </div>
           </div>
         </section>
