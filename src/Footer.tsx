@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Instagram, Twitter, Cloud } from "lucide-react";
+import { Instagram, Twitter, Cloud, Facebook } from "lucide-react";
 
 function Footer() {
   return (
@@ -43,6 +43,16 @@ function Footer() {
             <span className="sr-only">Instagram</span>
           </a>
           <a
+            href="https://www.facebook.com/profile.php?id=61577139086824#"
+            aria-label="Facebook"
+            className="hover:text-orange-400 flex items-center gap-2"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Facebook className="w-6 h-6" />
+            <span className="sr-only">Facebook</span>
+          </a>
+          <a
             href="https://twitter.com/incredindiamke"
             aria-label="Twitter"
             className="hover:text-orange-400 flex items-center gap-2"
@@ -53,7 +63,7 @@ function Footer() {
             <span className="sr-only">Twitter</span>
           </a>
           <a
-            href="https://bsky.app/profile/incredibleindiamke"
+            href="https://incredibleindiamke.bsky.social"
             aria-label="Bluesky"
             className="hover:text-orange-400 flex items-center gap-2"
             target="_blank"

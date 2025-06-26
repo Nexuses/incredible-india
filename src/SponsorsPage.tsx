@@ -18,20 +18,29 @@ function SponsorsPage() {
 
   // Small sponsors
   const smallSponsors = [
-    { name: "Sponsor 1", image: "/sponsors/small/image (10).png" },
     { name: "Sponsor 2", image: "/sponsors/small/image (11).png" },
     { name: "Sponsor 3", image: "/sponsors/small/image (12).png" },
-    { name: "Sponsor 4", image: "/sponsors/small/image (14).png" },
     { name: "Sponsor 5", image: "/sponsors/small/image (15).png" },
     { name: "Sponsor 6", image: "/sponsors/small/image (16).png" },
     { name: "Sponsor 7", image: "/sponsors/small/image (17).png" },
     { name: "Sponsor 8", image: "/sponsors/small/image (18).png" },
-    // Additional logo provided via external link
     { name: "New Sponsor", image: "https://i.imgur.com/AR3gtJ3.png" },
   ];
 
   // Text-only sponsor
-  const textSponsor = "Indian Spices and Groceries, Milwaukee";
+  const textSponsor = "Indian Groceries and Spices, Milwaukee";
+
+  // Media sponsors
+  const mediaSponsors = [
+    { name: "IUSA Media", image: "/sponsors/media/IUSA Media.jpg" },
+    { name: "PTC Punjabi - Gurleen Kaur", image: "/sponsors/media/PTC Punjabi.jpg" },
+  ];
+
+  // Additional supporters (moved from small sponsors)
+  const additionalSponsors = [
+    { name: "", image: "/sponsors/supporters/image (10).png" },
+    { name: "", image: "/sponsors/supporters/image (14).png" },
+  ];
 
   return (
     <div className="min-h-screen bg-white">
@@ -132,10 +141,25 @@ function SponsorsPage() {
                 </motion.div>
               ))}
             </div>
+            
+            {/* Text sponsor added to Supporting Sponsors section */}
+            <div className="max-w-3xl mx-auto mt-8">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.7 }}
+                whileHover={{ scale: 1.02 }}
+                className="bg-gradient-to-r from-orange-50 to-pink-50 rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-orange-100"
+              >
+                <h3 className="text-xl font-semibold text-gray-800 text-center">
+                  {textSponsor}
+                </h3>
+              </motion.div>
+            </div>
           </div>
         </section>
 
-        {/* Text-only Sponsor Section */}
+        {/* Media Sponsors Section */}
         <section className="py-16">
           <div className="container mx-auto px-4">
             <motion.div
@@ -145,23 +169,70 @@ function SponsorsPage() {
               className="text-center mb-12"
             >
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                Media Supporters
+              </h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-pink-500 mx-auto"></div>
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+              {mediaSponsors.map((sponsor, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.7 + index * 0.1 }}
+                  whileHover={{ scale: 1.05 }}
+                  className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center"
+                >
+                  <img
+                    src={sponsor.image}
+                    alt={sponsor.name}
+                    className="h-28 object-contain mb-4"
+                  />
+                  <h3 className="text-xl font-semibold text-gray-800">
+                    {sponsor.name}
+                  </h3>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Additional Supporters Section */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.8 }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
                 Additional Supporters
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-pink-500 mx-auto"></div>
             </motion.div>
 
-            <div className="max-w-3xl mx-auto">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.7 }}
-                whileHover={{ scale: 1.02 }}
-                className="bg-gradient-to-r from-orange-50 to-pink-50 rounded-xl p-8 shadow-md hover:shadow-lg transition-all duration-300 border border-orange-100"
-              >
-                <h3 className="text-2xl font-bold text-gray-800 text-center">
-                  {textSponsor}
-                </h3>
-              </motion.div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+              {additionalSponsors.map((sponsor, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.9 + index * 0.1 }}
+                  whileHover={{ scale: 1.05 }}
+                  className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center"
+                >
+                  <img
+                    src={sponsor.image}
+                    alt={sponsor.name}
+                    className="h-28 object-contain mb-4"
+                  />
+                  <h3 className="text-xl font-semibold text-gray-800">
+                    {sponsor.name}
+                  </h3>
+                </motion.div>
+              ))}
             </div>
           </div>
         </section>
