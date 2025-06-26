@@ -26,6 +26,8 @@ function SponsorsPage() {
     { name: "Sponsor 6", image: "/sponsors/small/image (16).png" },
     { name: "Sponsor 7", image: "/sponsors/small/image (17).png" },
     { name: "Sponsor 8", image: "/sponsors/small/image (18).png" },
+    // Additional logo provided via external link
+    { name: "New Sponsor", image: "https://i.imgur.com/AR3gtJ3.png" },
   ];
 
   // Text-only sponsor
