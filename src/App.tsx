@@ -822,7 +822,7 @@ function App() {
               <h3 className="text-xl font-bold text-gray-900 mb-4">Location & Time</h3>
               <p className="text-gray-700 mb-4">
                 <strong>Date:</strong> July 12, 2025<br />
-                <strong>Time:</strong> 12:00 AM - 7:00 PM<br />
+                <strong>Time:</strong> 12:00 PM - 7:00 PM<br />
                 <strong>Venue:</strong> Henry Maier Festival Park, Milwaukee
               </p>
               <div className="rounded-xl overflow-hidden h-48 bg-gray-100">
@@ -902,7 +902,7 @@ function App() {
               <div className="flex flex-col md:flex-row gap-8 items-center">
                 <div className="md:w-1/3">
                   <img
-                    src="https://22527425.fs1.hubspotusercontent-na1.net/hubfs/22527425/WhatsApp%20Image%202025-06-10%20at%2020.25.07_c354347d.jpg"
+                    src="/sanskriti/sanskriti-logo.jpeg"
                     alt="Sanskriti Logo"
                     className="w-full h-auto rounded-2xl shadow-lg"
                   />
