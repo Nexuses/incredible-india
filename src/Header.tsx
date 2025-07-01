@@ -130,9 +130,9 @@ function Header({ openQRModal }: HeaderProps) {
     <header className="fixed top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-lg">
       <div className="container mx-auto px-4 py-3 lg:py-4">
         {/* Header row with grid layout */}
-        <div className="grid grid-cols-2 lg:grid-cols-3 items-center">
-          {/* Logo - always in first column */}
-          <div className="col-span-1">
+        <div className="grid grid-cols-2 lg:grid-cols-2 items-center">
+          {/* Logo and text in first column */}
+          <div className="col-span-1 flex items-center gap-3">
             <Link 
               to="/" 
               onClick={(e) => {
@@ -148,16 +148,16 @@ function Header({ openQRModal }: HeaderProps) {
                 className="h-12 w-auto lg:h-16"
               />
             </Link>
-          </div>
-          
-          {/* Festival info - hidden on mobile, middle column on desktop */}
-          <div className="hidden lg:block text-center">
-            <h1 className="text-xl font-bold text-gray-900">
-              Incredible India Festival
-            </h1>
-            <p className="text-sm text-gray-600">
-              July 12, 2025 • Milwaukee
-            </p>
+            
+            {/* Festival info - hidden on mobile */}
+            <div className="hidden sm:block">
+              <h1 className="text-xl font-bold text-gray-900">
+                Incredible India Festival
+              </h1>
+              <p className="text-sm text-gray-600">
+                July 12, 2025 • Milwaukee
+              </p>
+            </div>
           </div>
           
           {/* Mobile menu button or desktop nav - always in last column */}

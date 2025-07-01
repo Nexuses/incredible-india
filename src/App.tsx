@@ -196,7 +196,7 @@ function QRCodeModal({
                 className="text-center space-y-3"
               >
                 <p className="text-gray-700 font-semibold">
-                  Early Bird Special: $8 per person
+                  $10 per person
                 </p>
                 <p className="text-sm text-gray-500">
                   Use your phone's camera to scan the QR code above
@@ -739,7 +739,7 @@ function App() {
               transition={{ delay: 0.2 }}
               className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
             >
-              Secure your spot at the Incredible India Festival. Early bird tickets available now!
+              Secure your spot at the Incredible India Festival. Tickets available now!
             </motion.p>
           </div>
 
@@ -750,11 +750,11 @@ function App() {
             >
               <div className="flex flex-col md:flex-row items-center gap-8">
                 <div className="md:w-1/2">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Early Bird Special</h3>
+                  {/* <h3 className="text-2xl font-bold text-gray-900 mb-4">Early Bird Special</h3> */}
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-center gap-2">
                       <span className="w-5 h-5 bg-gradient-to-r from-orange-500 to-pink-500 rounded-full flex-shrink-0"></span>
-                      <span className="text-gray-700">$8 per person</span>
+                      <span className="text-gray-700">$10 per person</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="w-5 h-5 bg-gradient-to-r from-orange-500 to-pink-500 rounded-full flex-shrink-0"></span>
