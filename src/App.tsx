@@ -278,6 +278,19 @@ function SupportingPartners() {
                 />
               </div>
             </motion.div>
+
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              className="bg-white rounded-3xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group"
+            >
+              <div className="aspect-[3/2] relative flex items-center justify-center p-4">
+                <img
+                  src="/sponsors/supporters/festa-italiana-logo.jpg"
+                  alt="Festa Italiana Logo"
+                  className="w-full h-full object-contain filter group-hover:brightness-105 transition-all duration-300"
+                />
+              </div>
+            </motion.div>
           </div>
 
           {/* Trust indicators */}
