@@ -239,7 +239,7 @@ function SupportingPartners() {
         </div>
 
         <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-center mb-12">
             <motion.div
               whileHover={{ scale: 1.02 }}
               className="bg-white rounded-3xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group"
@@ -285,8 +285,8 @@ function SupportingPartners() {
             >
               <div className="aspect-[3/2] relative flex items-center justify-center p-4">
                 <img
-                  src="/sponsors/supporters/festa-italiana-logo.jpg"
-                  alt="Festa Italiana Logo"
+                  src="https://22527425.fs1.hubspotusercontent-na1.net/hubfs/22527425/WhatsApp%20Image%202025-07-03%20at%2015.06.28_6b8761bb.jpg"
+                  alt="Partner Logo 4"
                   className="w-full h-full object-contain filter group-hover:brightness-105 transition-all duration-300"
                 />
               </div>
