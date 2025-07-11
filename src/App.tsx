@@ -244,11 +244,11 @@ function SupportingPartners() {
               whileHover={{ scale: 1.02 }}
               className="bg-white rounded-3xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group"
             >
-              <div className="aspect-[3/2] relative flex items-center justify-center p-4">
+              <div className="aspect-[3/2] relative flex items-center justify-center p-2">
                 <img
                   src="https://22527425.fs1.hubspotusercontent-na1.net/hubfs/22527425/image%20(19)-2.png"
                   alt="Partner Logo 1"
-                  className="w-full h-full object-contain filter group-hover:brightness-105 transition-all duration-300"
+                  className="w-full h-full object-contain filter group-hover:brightness-105 transition-all duration-300 scale-110"
                 />
               </div>
             </motion.div>
@@ -257,11 +257,11 @@ function SupportingPartners() {
               whileHover={{ scale: 1.02 }}
               className="bg-white rounded-3xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group"
             >
-              <div className="aspect-[3/2] relative flex items-center justify-center p-4">
+              <div className="aspect-[3/2] relative flex items-center justify-center p-2">
                 <img
                   src="https://22527425.fs1.hubspotusercontent-na1.net/hubfs/22527425/WhatsApp%20Image%202025-06-10%20at%2020.25.07_c354347d.jpg"
                   alt="Partner Logo 2"
-                  className="w-full h-full object-contain filter group-hover:brightness-105 transition-all duration-300"
+                  className="w-full h-full object-contain filter group-hover:brightness-105 transition-all duration-300 scale-110"
                 />
               </div>
             </motion.div>
@@ -270,11 +270,11 @@ function SupportingPartners() {
               whileHover={{ scale: 1.02 }}
               className="bg-white rounded-3xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group"
             >
-              <div className="aspect-[3/2] relative flex items-center justify-center p-4">
+              <div className="aspect-[3/2] relative flex items-center justify-center p-2">
                 <img
                   src="/sponsors/big/aapi.png"
                   alt="AAPI"
-                  className="w-full h-full object-contain filter group-hover:brightness-105 transition-all duration-300"
+                  className="w-full h-full object-contain filter group-hover:brightness-105 transition-all duration-300 scale-110"
                 />
               </div>
             </motion.div>
@@ -283,11 +283,11 @@ function SupportingPartners() {
               whileHover={{ scale: 1.02 }}
               className="bg-white rounded-3xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group"
             >
-              <div className="aspect-[3/2] relative flex items-center justify-center p-4">
+              <div className="aspect-[3/2] relative flex items-center justify-center p-2">
                 <img
                   src="https://22527425.fs1.hubspotusercontent-na1.net/hubfs/22527425/WhatsApp%20Image%202025-07-03%20at%2015.06.28_6b8761bb.jpg"
                   alt="Partner Logo 4"
-                  className="w-full h-full object-contain filter group-hover:brightness-105 transition-all duration-300"
+                  className="w-full h-full object-contain filter group-hover:brightness-105 transition-all duration-300 scale-110"
                 />
               </div>
             </motion.div>

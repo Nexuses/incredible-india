@@ -248,6 +248,8 @@ function SponsorsPage() {
                     </motion.div>
                   );
                 } else if (typeof sponsor === 'object' && 'image' in sponsor) {
+                  // Increase logo size for 3rd, 5th, and 6th logos (indices 2, 4, 5)
+                  const isLargerLogo = index === 2 || index === 4 || index === 5;
                   return (
                     <motion.div
                       key={index}
@@ -261,7 +263,7 @@ function SponsorsPage() {
                         <img
                           src={sponsor.image}
                           alt={sponsor.name}
-                          className="h-24 md:h-32 w-auto object-contain mb-2 mx-auto"
+                          className={`w-auto object-contain mb-2 mx-auto ${isLargerLogo ? 'h-36 md:h-48 scale-125' : 'h-24 md:h-32'}`}
                         />
                       </div>
                     </motion.div>
@@ -303,7 +305,7 @@ function SponsorsPage() {
                     <img
                       src={sponsor.image}
                       alt={sponsor.name}
-                      className="h-24 md:h-32 w-auto object-contain mb-2 mx-auto"
+                      className={`w-auto object-contain mb-2 mx-auto ${index < 2 ? 'h-20 md:h-28' : 'h-32 md:h-40 scale-110'}`}
                     />
                   </motion.div>
                 ))}
@@ -323,7 +325,7 @@ function SponsorsPage() {
                     <img
                       src={sponsor.image}
                       alt={sponsor.name}
-                      className="h-24 md:h-32 w-auto object-contain mb-2 mx-auto"
+                      className="h-32 md:h-40 w-auto object-contain mb-2 mx-auto scale-110"
                     />
                   </motion.div>
                 ))}
@@ -343,7 +345,7 @@ function SponsorsPage() {
                     <img
                       src={sponsor.image}
                       alt={sponsor.name}
-                      className="h-32 md:h-40 w-auto object-contain mb-2 mx-auto"
+                      className={`w-auto object-contain mb-2 mx-auto ${index === 1 ? 'h-32 md:h-40' : 'h-40 md:h-48 scale-110'}`}
                     />
                   </motion.div>
                 ))}
@@ -430,7 +432,7 @@ function SponsorsPage() {
                     <img
                       src={supporter.image}
                       alt={supporter.name}
-                      className="h-40 md:h-48 w-auto object-contain mb-2 mx-auto"
+                      className="h-48 md:h-56 w-auto object-contain mb-2 mx-auto scale-110"
                     />
                   </motion.div>
                 ))}
