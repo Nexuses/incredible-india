@@ -40,7 +40,6 @@ function SponsorsPage() {
 
   // Additional supporters (Our Food Vendors)
   const additionalSponsors = [
-    { name: "", image: "/sponsors/small/image (17).png" },
     { name: "Sponsor 5", image: "/sponsors/small/image (15).png" },
     { name: "Sponsor 6", image: "/sponsors/small/image (16).png" },
     { name: "New Sponsor", image: "https://i.imgur.com/AR3gtJ3.png" },
@@ -289,26 +288,110 @@ function SponsorsPage() {
               <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-pink-500 mx-auto"></div>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              {additionalSponsors.map((sponsor, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.9 + index * 0.1 }}
-                  whileHover={{ scale: 1.05 }}
-                  className={`bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center ${
-                    index === additionalSponsors.length - 1 ? 'md:col-span-3' : ''
-                  }`}
-                >
-                  <img
-                    src={sponsor.image}
-                    alt={sponsor.name}
-                    className="h-24 md:h-32 w-auto object-contain mb-2 mx-auto"
-                  />
-                </motion.div>
-              ))}
+            <div className="max-w-4xl mx-auto">
+              {/* Row 1: 3 vendors */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                {additionalSponsors.slice(0, 3).map((sponsor, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.9 + index * 0.1 }}
+                    whileHover={{ scale: 1.05 }}
+                    className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center h-40 w-full"
+                  >
+                    <img
+                      src={sponsor.image}
+                      alt={sponsor.name}
+                      className="h-24 md:h-32 w-auto object-contain mb-2 mx-auto"
+                    />
+                  </motion.div>
+                ))}
+              </div>
+              
+              {/* Row 2: 3 vendors */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                {additionalSponsors.slice(3, 6).map((sponsor, index) => (
+                  <motion.div
+                    key={index + 3}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 1.2 + index * 0.1 }}
+                    whileHover={{ scale: 1.05 }}
+                    className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center h-40 w-full"
+                  >
+                    <img
+                      src={sponsor.image}
+                      alt={sponsor.name}
+                      className="h-24 md:h-32 w-auto object-contain mb-2 mx-auto"
+                    />
+                  </motion.div>
+                ))}
+              </div>
+              
+              {/* Row 3: 2 vendors with larger size */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                {additionalSponsors.slice(6, 8).map((sponsor, index) => (
+                  <motion.div
+                    key={index + 6}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 1.5 + index * 0.1 }}
+                    whileHover={{ scale: 1.05 }}
+                    className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center h-48 w-full"
+                  >
+                    <img
+                      src={sponsor.image}
+                      alt={sponsor.name}
+                      className="h-32 md:h-40 w-auto object-contain mb-2 mx-auto"
+                    />
+                  </motion.div>
+                ))}
+              </div>
+              
+              {/* Row 4: 1 vendor (last one, unchanged) */}
+              <div className="grid grid-cols-1 gap-8">
+                {additionalSponsors.slice(8, 9).map((sponsor, index) => (
+                  <motion.div
+                    key={index + 8}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 1.8 + index * 0.1 }}
+                    whileHover={{ scale: 1.05 }}
+                    className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center h-40 w-full md:col-span-3"
+                  >
+                    <img
+                      src={sponsor.image}
+                      alt={sponsor.name}
+                      className="h-24 md:h-32 w-auto object-contain mb-2 mx-auto"
+                    />
+                  </motion.div>
+                ))}
+              </div>
             </div>
+          </div>
+        </section>
+
+        {/* Client Image Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 1.0 }}
+              className="text-center"
+            >
+              <motion.div
+                whileHover={{ scale: 1.02 }}
+                className="max-w-4xl mx-auto"
+              >
+                <img
+                  src="https://22527425.fs1.hubspotusercontent-na1.net/hubfs/22527425/client.jpg"
+                  alt="Client"
+                  className="w-full h-auto rounded-2xl shadow-lg"
+                />
+              </motion.div>
+            </motion.div>
           </div>
         </section>
 
@@ -327,10 +410,11 @@ function SponsorsPage() {
               <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-pink-500 mx-auto"></div>
             </motion.div>
 
-            {/* Custom grid: first row 3, second row 3, third row 2 */}
-            <div className="max-w-3xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            {/* Custom grid: first row 4, second row 3, third row 2 */}
+            <div className="max-w-4xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 {[ 
+                  { image: "/sponsors/small/image (17).png", name: "New Supporter" },
                   { image: "https://22527425.fs1.hubspotusercontent-na1.net/hubfs/22527425/sewa%20usa%20logo.png", name: "Sewa USA" },
                   { image: "https://22527425.fs1.hubspotusercontent-na1.net/hubfs/22527425/askshaya.png", name: "Akshaya Patra" },
                   { image: "https://22527425.fs1.hubspotusercontent-na1.net/hubfs/22527425/desivibes.png", name: "Desi Vibes" },
@@ -341,19 +425,19 @@ function SponsorsPage() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.9 + index * 0.1 }}
                     whileHover={{ scale: 1.05 }}
-                    className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center h-48 w-full"
+                    className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center h-56 w-full"
                   >
                     <img
                       src={supporter.image}
                       alt={supporter.name}
-                      className="h-32 md:h-40 w-auto object-contain mb-2 mx-auto"
+                      className="h-40 md:h-48 w-auto object-contain mb-2 mx-auto"
                     />
                   </motion.div>
                 ))}
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                 {[ 
-                  { image: "https://22527425.fs1.hubspotusercontent-na1.net/hubfs/22527425/unnamed-1.png", name: "New Supporter 1" },
+                  { image: "/sponsors/small/image (18).png", name: "Cafe 94 Indian Fusion" },
                   { image: "https://22527425.fs1.hubspotusercontent-na1.net/hubfs/22527425/WhatsApp%20Image%202025-07-11%20at%2012.03.25_0429a790.jpg", name: "New Supporter 2" },
                   { image: "https://22527425.fs1.hubspotusercontent-na1.net/hubfs/22527425/WhatsApp%20Image%202025-07-11%20at%2012.06.00_0ef46be1.jpg", name: "New Supporter 3" },
                 ].map((supporter, index) => (
@@ -363,12 +447,12 @@ function SponsorsPage() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 1.2 + index * 0.1 }}
                     whileHover={{ scale: 1.05 }}
-                    className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center h-48 w-full"
+                    className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center h-56 w-full"
                   >
                     <img
                       src={supporter.image}
                       alt={supporter.name}
-                      className="h-32 md:h-40 w-auto object-contain mb-2 mx-auto"
+                      className="h-40 md:h-48 w-auto object-contain mb-2 mx-auto"
                     />
                   </motion.div>
                 ))}
@@ -376,7 +460,7 @@ function SponsorsPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {[ 
                   { image: "https://22527425.fs1.hubspotusercontent-na1.net/hubfs/22527425/bestfood.png", name: "Best Food" },
-                  { image: "/sponsors/small/image (18).png", name: "Cafe 94 Indian Fusion" },
+                  { image: "https://22527425.fs1.hubspotusercontent-na1.net/hubfs/22527425/unnamed-1.png", name: "New Supporter 1" },
                 ].map((supporter, index) => (
                   <motion.div
                     key={index}
@@ -384,12 +468,12 @@ function SponsorsPage() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 1.5 + index * 0.1 }}
                     whileHover={{ scale: 1.05 }}
-                    className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center h-48 w-full"
+                    className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center h-56 w-full"
                   >
                     <img
                       src={supporter.image}
                       alt={supporter.name}
-                      className="h-32 md:h-40 w-auto object-contain mb-2 mx-auto"
+                      className="h-40 md:h-48 w-auto object-contain mb-2 mx-auto"
                     />
                   </motion.div>
                 ))}
